@@ -1,27 +1,42 @@
-// pages/auth/withAuth.js
-import { useEffect } from "react";
-import { useRouter } from "next/router";
+"use client";
+import Image from "next/image";
+import LoginForm from "@/app/login/component/loginform";
+import UserButton from "./component/userButton";
+import Link from "next/link";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const withAuth = (WrappedComponent) => {
-  return (props) => {
-    const router = useRouter();
+import house from "@/../public/images/rumahlogin.svg";
+import google from "@/../public/images/google.svg";
 
-    useEffect(() => {
-      // Implement logic to check if the user is authenticated.
-      // If the user is not authenticated, redirect them to the login page.
-      const isAuthenticated = ... // Check if the user is authenticated.
+export default function Login() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  });
 
-      if (!isAuthenticated) {
-        router.push("/login"); // Redirect to the login page.
-      }
-    }, []);
-
-    if (isAuthenticated) {
-      return <WrappedComponent {...props} />;
-    } else {
-      return null;
-    }
-  };
-};
-
-export default withAuth;
+  return (
+    <div className="flex flex-col md:flex-row bg-white w-full h-full">
+      <h1 className="flex justify-center items-center text-[#3D688E] font-montserrat text-2xl font-semibold leading-normal tracking-wide mb-[54px]">
+        Choose Account Type
+      </h1>
+      <div>
+        <UserButton />
+      </div>
+      <div className="mt-[56px] mb-[42px]">
+        <h2 className="flex justify-center items-center text-[#528BBE] text-center font-montserrat text-base font-regular leading-normal tracking-tight">
+          Hello User!{" "}
+        </h2>
+        <h2 className="flex justify-center items-center text-[#528BBE] text-center font-montserrat text-base font-regular leading-normal tracking-tight">
+          Please out the form below
+        </h2>
+      </div>
+      <div className="flex justify-center items-center">
+        <LoginForm />
+      </div>
+      <footer className="">
+        <img src="Footer.png" />
+      </footer>
+    </div>
+  );
+}
