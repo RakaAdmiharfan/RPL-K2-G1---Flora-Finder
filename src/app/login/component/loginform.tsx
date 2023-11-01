@@ -60,20 +60,21 @@ export default function LoginForm() {
       >
         <Form>
           <div className="mb-[10px] sm:mb-[15px] md:mb-[20px] xl:mb-[20px] lg:mb-[15px] text-poppins flex flex-col">
-            <text className="font-medium text-[11px] sm:text-[15px] md:text-[18px] xl:text-[14px] lg:text-[12px] mb-[10px] sm:mb-[13px] md:mb-[15px] xl:mb-[20px] lg:mb-[15px] text-poppins">
+            <text className="font-medium text-[12px] sm:text-[15px] md:text-[18px] xl:text-[14px] lg:text-[12px] mb-[10px] sm:mb-[13px] md:mb-[15px] xl:mb-[20px] lg:mb-[15px] text-poppins">
               Username
             </text>
             <Field
+              src="/User.png"
               className="form-control w-[82.2vw] lg:w-[39.6vw] h-auto aspect-[296/28] lg:aspect-[760/48] rounded-[5px] lg:rounded-[15px] bg-[#E6EAF4] pl-[2.7vw] lg:pl-[1.25vw] text-[11px] sm:text-[15px] md:text-[18px] xl:text-[13px] lg:text-[11px]"
-              id="email"
-              name="email"
+              id="Username"
+              name="Username"
               placeholder="Username"
-              aria-describedby="emailHelp"
+              aria-describedby="UsernameHelp"
             />
           </div>
 
           <div className="mb-[27px] sm:mb-[25px] md:mb-[30px] xl:mb-[35px] lg:mb-[25px] text-poppins flex flex-col">
-            <text className="font-medium text-[11px] sm:text-[15px] md:text-[18px] xl:text-[14px] lg:text-[12px] mb-[10px] sm:mb-[13px] md:mb-[15px] xl:mb-[20px] lg:mb-[15px] text-poppins">
+            <text className="font-medium text-[12px] sm:text-[15px] md:text-[18px] xl:text-[14px] lg:text-[12px] mb-[10px] sm:mb-[13px] md:mb-[15px] xl:mb-[20px] lg:mb-[15px] text-poppins">
               Password
             </text>
             <Field
@@ -86,7 +87,7 @@ export default function LoginForm() {
             />
           </div>
 
-          <div className="ml-[250px]">
+          <div className="ml-[294px]">
             <button
               type="submit"
               className="bg-[#67AEEE] p-[10px] rounded-[5px] flex items-center justify-center"

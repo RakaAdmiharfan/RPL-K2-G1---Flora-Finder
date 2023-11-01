@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Navbar from "../Components/navbar";
 import LoginForm from "@/app/login/component/loginform";
 import UserButton from "./component/userButton";
 import Link from "next/link";
@@ -16,7 +17,10 @@ export default function Login() {
   });
 
   return (
-    <div className="flex flex-col md:flex-row bg-white w-full h-full">
+    <div className="relative overflow-hidden flex flex-col md:flex-row bg-white w-full h-full pb-36">
+      <nav>
+        <Navbar />
+      </nav>
       <h1 className="flex justify-center items-center text-[#3D688E] font-montserrat text-2xl font-semibold leading-normal tracking-wide mb-[54px]">
         Choose Account Type
       </h1>
@@ -34,7 +38,7 @@ export default function Login() {
       <div className="flex justify-center items-center">
         <LoginForm />
       </div>
-      <footer className="">
+      <footer className="mt-[93px] overflow-hidden absolute -bottom-20">
         <img src="Footer.png" />
       </footer>
     </div>

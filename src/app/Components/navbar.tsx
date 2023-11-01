@@ -16,16 +16,16 @@ const Navbar = () => {
   console.log(nav);
   return (
     <div className="h-[100px]">
-      <div className="bg-[#2E3362] w-full flex justify-between items-center p-4 fixed">
-        <div className="ml-[100px]">
+      <div className="bg-[#ffffff] w-full flex justify-between items-center fixed border-b border-black">
+        <div className="ml-[12px]">
           <Link href="/">
-            <img src="/Home/Logo.png" alt="Logo" />
+            <img src="/logo-rpl.png" alt="Logo" className="w-[83px] h-[60px]" />
           </Link>
         </div>
 
-        <div onClick={handleNav} className="block sm:hidden z-40">
+        <div onClick={handleNav} className="block sm:hidden z-40 mr-[20px]">
           {nav ? (
-            <AiOutlineClose size={20} style={{ color: `white` }} />
+            <AiOutlineClose size={20} style={{ color: `black` }} />
           ) : (
             <AiOutlineMenu size={20} />
           )}
@@ -33,7 +33,7 @@ const Navbar = () => {
         <div
           className={`sm:hidden absolute top-0 ${
             nav ? "translate-x-0" : "translate-x-full"
-          } transition duration-300 right-0 bottom-0 flex justify-center items-center w-[80vw] h-screen bg-[#14037D] text-center text-white`}
+          } transition duration-300 right-0 bottom-0 flex justify-center items-center w-[80vw] h-screen bg-[#ffffff] text-center text-black border-l-[1px] border-black`}
         >
           <ul>
             <li onClick={handleNav} className="p-4">
