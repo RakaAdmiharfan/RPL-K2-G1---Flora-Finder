@@ -18,14 +18,14 @@ export default function Login() {
   });
 
   return (
-    <div className="relative overflow-hidden flex flex-col md:flex-col lg:flex-col bg-white w-full h-full pb-36 lg:pb-72 lg:pt-[43px]">
+    <div className="relative overflow-hidden flex flex-col md:flex-col lg:flex-col bg-white w-full h-full pb-36 lg:pb-72">
       <nav className="lg:hidden">
         <Navbar />
       </nav>
       {/* <nav className="">
         <SideNav />
       </nav> */}
-      <h1 className="flex justify-center items-center text-[#3D688E] font-montserrat text-2xl lg:text-[48px] font-bold leading-normal tracking-wide mb-[54px]">
+      <h1 className="flex justify-center items-center text-[#3D688E] font-montserrat text-2xl lg:text-[48px] font-bold leading-normal tracking-wide mb-[54px] mt-[108px] lg:mt-[52px]">
         Choose Account Type
       </h1>
       <div>
@@ -39,7 +39,7 @@ export default function Login() {
           Please out the form below
         </h2>
       </div>
-      <div className="flex ml-[26px] lg:ml-[470px]">
+      <div className="flex ml-[26px] lg:ml-[260px] xl:ml-[470px]">
         <LoginForm />
       </div>
       <footer className="mt-[93px] lg:mt-[200px] overflow-hidden absolute -bottom-20 lg:bottom-[-340px]">

@@ -65,7 +65,7 @@ export default function LoginForm() {
             </text>
             <Field
               src="/User.png"
-              className="form-control w-[82.2vw] lg:w-[39.6vw] h-auto aspect-[296/28] lg:aspect-[760/48] rounded-[5px] lg:rounded-[15px] bg-[#E6EAF4] pl-[2.7vw] lg:pl-[1.25vw] text-[11px] sm:text-[15px] md:text-[18px] xl:text-[13px] lg:text-[11px]"
+              className="form-control w-[82.2vw] lg:w-[50vw] xl:w-[39.6vw] h-auto aspect-[296/28] lg:aspect-[760/48] rounded-[5px] lg:rounded-[15px] bg-[#E6EAF4] pl-[2.7vw] lg:pl-[1.25vw] text-[11px] sm:text-[15px] md:text-[18px] xl:text-[13px] lg:text-[11px]"
               id="Username"
               name="Username"
               placeholder="Username"
@@ -78,7 +78,7 @@ export default function LoginForm() {
               Password
             </text>
             <Field
-              className="form-control w-[82.2vw] lg:w-[39.6vw] h-auto aspect-[296/28] lg:aspect-[760/48] rounded-[5px] lg:rounded-[15px] bg-[#E6EAF4] pl-[2.7vw] lg:pl-[1.25vw] text-[11px] sm:text-[15px] md:text-[18px] xl:text-[13px] lg:text-[11px]"
+              className="form-control w-[82.2vw] lg:w-[50vw] xl:w-[39.6vw] h-auto aspect-[296/28] lg:aspect-[760/48] rounded-[5px] lg:rounded-[15px] bg-[#E6EAF4] pl-[2.7vw] lg:pl-[1.25vw] text-[11px] sm:text-[15px] md:text-[18px] xl:text-[13px] lg:text-[11px]"
               id="password"
               type="password"
               name="password"
@@ -90,9 +90,9 @@ export default function LoginForm() {
           <div className="">
             <button
               type="submit"
-              className="bg-[#67AEEE] px-[16px] py-[6px] rounded-[5px] flex items-center justify-center text-[12px]"
+              className="bg-[#67AEEE] px-[16px] py-[6px] rounded-[5px] flex items-center justify-center"
             >
-              <text className="text-white font-montserrat text-xs font-semibold leading-normal">
+              <text className="text-white font-montserrat text-xs font-semibold leading-normal text-[12px] lg:text-[14px]">
                 Log In
               </text>
             </button>
