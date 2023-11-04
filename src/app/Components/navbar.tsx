@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import "./Navbar.css";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -15,7 +14,7 @@ const Navbar = () => {
 
   console.log(nav);
   return (
-    <div className="h-[100px]">
+    <div>
       <div className="bg-[#ffffff] w-full flex justify-between items-center fixed border-b border-black">
         <div className="ml-[12px]">
           <Link href="/">
