@@ -16,14 +16,21 @@ export default function UserButton() {
   };
 
   return (
-    <div onClick={onClick} className="flex flex-row gap-[13px] mx-auto w-fit">
-      <div className="flex flex-col justify-center items-center border border-black w-[170px] h-[170px] rounded-[10px]">
-        <img src="/delivery.png" />
-        <p className="mt-[15px]">Delivery Staff</p>
+    <div
+      onClick={onClick}
+      className="flex flex-row gap-[13px] lg:gap-[20px] mx-auto w-fit"
+    >
+      <div className="flex flex-col justify-center items-center border border-black w-[120px] h-[120px] lg:w-[260px] lg:h-[200px] rounded-[10px]">
+        <img src="/delivery.png" className="w-[60px] lg:w-[100px]" />
+        <p className="mt-[12px] text-[#3D688E] font-semibold text-[14px] lg:text-[20px]">
+          Delivery Staff
+        </p>
       </div>
-      <div className="flex flex-col justify-center items-center border border-black w-[170px] h-[170px] rounded-[10px]">
-        <img src="/manOps.png" />
-        <p className="mt-[15px]">Ops Manager</p>
+      <div className="flex flex-col justify-center items-center border border-black w-[120px] h-[120px] lg:w-[260px] lg:h-[200px] rounded-[10px]">
+        <img src="/manOps.png" className="w-[72px] lg:w-[114px]" />
+        <p className="mt-[12px] text-[#3D688E] font-semibold text-[14px] lg:text-[20px] ">
+          Ops Manager
+        </p>
       </div>
     </div>
   );
