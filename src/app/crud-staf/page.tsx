@@ -50,20 +50,20 @@ export default function PropertyPage() {
         <Navbar />
       </nav>
 
-      <h2 className="text-[#3D688E] text-center font-montserrat font-semibold text-[24px] mt-[0px] lg:text-[48px] lg:mt-[70px] lg:mb-4">
+      <h2 className="text-[#3D688E] text-center font-montserrat font-semibold text-[24px] mt-[0px] lg:text-[48px] lg:mt-[70px] lg:mb-6">
         Delivery Staff List
       </h2>
 
       <div className="ml-[5vw] lg:ml-[15.46vw] mt-[20px]">
-        <div className="flex rounded-[9.046px] lg:rounded-[15px] hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] bg-[#2E3362] justify-center w-[119px] mb-[11px] px-[18px] py-[6px] lg:mb-[16px] lg:w-[10.26vw] lg:p-[10px]">
+        <div className="flex rounded-[5px] lg:rounded-[8px] hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] bg-[#3D688E] text-white justify-center w-[119px] mb-[11px] px-[18px] py-[6px] lg:mb-[16px] lg:w-[10.26vw] lg:p-[10px]">
           <Link
             href={{
-              pathname: "/editProp",
+              pathname: "/crud-staf/add-staf",
             }}
             className=""
           >
-            <h6 className="text-poppins font-semibold text-[10.856px] lg:text-[14px]">
-              Add Properties
+            <h6 className="text-montserrat font-bold text-[12px] lg:text-[16px]">
+              Add Staff
             </h6>
           </Link>
         </div>
@@ -73,7 +73,7 @@ export default function PropertyPage() {
         <div className="max-h-[600px] overflow-y-auto no-scrollbar">
           <StafList
             data={filteredProperties}
-            header={["ID", "Nama", "Alamat", "Edit"]}
+            header={["ID", "Nama", "No.Telp", "Edit"]}
           />
           {/* <Pagination current={handlePageChange} totalPages={totalPages} /> */}
         </div>

@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Inter, Montserrat, Poppins } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
-// const montserrat = Montserrat({ subsets: ["latin"] });
 
 const montserrat = Montserrat({
   subsets: ["latin"],

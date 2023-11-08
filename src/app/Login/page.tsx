@@ -9,9 +9,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import house from "@/../public/images/rumahlogin.svg";
-import google from "@/../public/images/google.svg";
-
 export default function Login() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
