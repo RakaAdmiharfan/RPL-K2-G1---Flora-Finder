@@ -6,7 +6,7 @@ import EditFormComponent from "./components/crudForm";
 import { useRouter } from "next/router";
 import { usePathname, useSearchParams } from "next/navigation";
 
-export default function PropertyPage({
+export default function crudPage({
   params,
 }: {
   params: {

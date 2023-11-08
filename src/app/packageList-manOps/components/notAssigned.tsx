@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-function PackageList({ data, header }: { data: any[]; header: any[] }) {
+function NotAssigned({ data, header }: { data: any[]; header: any[] }) {
   const handleClick = (item: any) => {
     console.log(item);
   };
@@ -66,7 +66,7 @@ function PackageList({ data, header }: { data: any[]; header: any[] }) {
   );
 }
 
-export default PackageList;
+export default NotAssigned;
 
 export const packageInfos = [
   {

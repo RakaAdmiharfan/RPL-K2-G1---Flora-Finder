@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 // import Search from "./components/search";
 import Navbar from "../components/navbar";
 import SideNav from "../components/sidenav";
-import PackageList from "./components/packageList";
+import Assigned from "./components/assigned";
 // import axios from "axios";
 
 export default function packageMenu() {
@@ -15,6 +15,8 @@ export default function packageMenu() {
   const filteredProperties = dataProperties.filter((property: any) =>
     property.nama_properti.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const [indeks, setIndesk] = useState(0);
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5; // Jumlah item per halaman
@@ -54,13 +56,30 @@ export default function packageMenu() {
         <SideNav />
       </nav>
 
-      <h2 className="text-[#3D688E] text-center font-montserrat font-semibold text-[24px] mt-[0px] lg:text-[48px] lg:mt-[70px] lg:mb-6 justify-center">
-        Delivery Staff List
+      <h2 className="text-[#3D688E] text-center font-montserrat font-bold text-[24px] mt-[0px] lg:text-[48px] lg:mt-[70px] lg:mb-6 justify-center">
+        Package List
       </h2>
 
-      <div className="ml-[280px]">
+      <div className="flex flex-row items-center justify-center mt-[42px]">
+        <div className="mr-[20px]">
+          <button className="bg-[#D1E6F9] px-[26px] py-[6px] rounded-[5px] flex items-center justify-center hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)]">
+            <text className="text-black font-montserrat text-xs font-semibold leading-normal text-[12px] lg:text-[14px]">
+              Assigned
+            </text>
+          </button>
+        </div>
+        <div className="">
+          <button className="bg-[#D1E6F9] px-[16px] py-[6px] rounded-[5px] flex items-center justify-center hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)]">
+            <text className="text-black font-montserrat text-xs font-semibold leading-normal text-[12px] lg:text-[14px]">
+              Not Assigned
+            </text>
+          </button>
+        </div>
+      </div>
+
+      <div className="ml-[280px] mt-[24px]">
         <div className="max-h-[600px] overflow-y-auto no-scrollbar">
-          <PackageList
+          <Assigned
             data={filteredProperties}
             header={[
               "ID",

@@ -55,7 +55,7 @@ export default function StaffList() {
       </nav>
 
       <div className="ml-[80px]">
-        <h2 className="text-[#3D688E] text-center font-montserrat font-semibold text-[24px] mt-[0px] lg:text-[48px] lg:mt-[70px] lg:mb-6">
+        <h2 className="text-[#3D688E] text-center font-montserrat font-bold text-[24px] mt-[0px] lg:text-[48px] lg:mt-[70px] lg:mb-6">
           Delivery Staff List
         </h2>
 

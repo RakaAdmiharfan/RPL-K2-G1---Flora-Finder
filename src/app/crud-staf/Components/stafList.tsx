@@ -42,7 +42,7 @@ function StafList({ data, header }: { data: any[]; header: any[] }) {
                 <td className="overflow-hidden w-auto h-auto py-[18.5px] text-[10px] lg:text-[20px] text-center">
                   <div>{user.noTelp}</div>
                 </td>
-                <td className="w-auto h-auto py-[18.5px]">
+                <td className="flex justify-center w-auto h-auto py-[18.5px]">
                   <Link
                     onClick={() => handleClick(user)}
                     href={`/crud-staf/${user.id}`}
