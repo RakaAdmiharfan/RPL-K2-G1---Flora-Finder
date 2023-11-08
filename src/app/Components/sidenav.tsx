@@ -13,25 +13,19 @@ export default function SideNav() {
           </div>
 
           <ul className="font-medium flex flex-col">
-            <li className="flex items-center gap-4 py-4 px-5 rounded-xl">
-              <Link href="/">
-                <p className="flex-1 text-sm whitespace-nowrap mt-[30px] ">
-                  Package List
-                </p>
+            <li className="flex items-center gap-4 py-4 px-5 rounded-xl hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] mt-[30px]">
+              <Link href="/package-list">
+                <p className="flex-1 text-sm whitespace-nowrap">Package List</p>
               </Link>
             </li>
-            <li className="flex items-center gap-4 py-4 px-5 rounded-xl">
+            <li className="flex items-center gap-4 py-4 px-5 rounded-xl hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] mt-[30px]">
               <Link href="/crud-staf">
-                <p className="flex-1 text-sm whitespace-nowrap mt-[30px]">
-                  Staff List
-                </p>
+                <p className="flex-1 text-sm whitespace-nowrap">Staff List</p>
               </Link>
             </li>
-            <li className="flex items-center gap-4 py-4 px-5 rounded-xl">
-              <Link href="/maintenance">
-                <p className="flex-1 text-sm whitespace-nowrap mt-[30px]">
-                  Notification
-                </p>
+            <li className="flex items-center gap-4 py-4 px-5 rounded-xl hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] mt-[30px]">
+              <Link href="/notification">
+                <p className="flex-1 text-sm whitespace-nowrap">Notification</p>
               </Link>
             </li>
           </ul>

@@ -23,15 +23,50 @@ export default function PropertyPage({
   }, [pathname, searchParams]);
 
   return (
-    <div className="bg-[#EFF6FD] relative overflow-hidden w-full h-content flex-col flex items-center justify-center pb-20">
+    <div className="bg-[#EFF6FD] relative overflow-hidden w-full h-full flex-col flex pb-80">
+      <div className="">
+        <Link href="/crud-staf">
+          <img
+            src="/arrow-left.svg"
+            alt="back"
+            className="ml-[40px] mt-[40px] w-[38px] hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)]"
+          />
+        </Link>
+      </div>
       <div className="title">
-        <h2 className="text-[#3D688E] text-[48px] font-bold font-Montserrat text-center mt-[74px]">
+        <h2 className="text-[#3D688E] text-[48px] font-bold font-Montserrat text-center mt-[40px]">
           Delivery Staff Detail
         </h2>
       </div>
-      <div className="Box mt-[48px]">
+      <div className="Box mt-[48px] ml-[240px]">
         <EditFormComponent />
       </div>
+      <div className="flex flex-row mt-[80px] items-center justify-center">
+        <div className="mr-[24px]">
+          <button
+            type="submit"
+            className="bg-[#3D688E] px-[26px] py-[6px] rounded-[5px] flex items-center justify-center"
+          >
+            <text className="text-white font-montserrat font-semibold leading-normal text-[12px] lg:text-[18px]">
+              Save
+            </text>
+          </button>
+        </div>
+
+        <div className="">
+          <button
+            type="submit"
+            className="bg-[#BC6161] px-[20px] py-[6px] rounded-[5px] flex items-center justify-center"
+          >
+            <text className="text-white font-montserrat text-xs font-semibold leading-normal text-[12px] lg:text-[18px]">
+              Delete
+            </text>
+          </button>
+        </div>
+      </div>
+      <footer className="mt-[140px] lg:mt-[200px] overflow-hidden absolute -bottom-20 lg:bottom-[-340px]">
+        <img src="/Footer.png" className="lg:w-[1620px]" />
+      </footer>
     </div>
   );
 }

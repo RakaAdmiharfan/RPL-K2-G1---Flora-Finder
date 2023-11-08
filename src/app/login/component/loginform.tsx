@@ -110,7 +110,7 @@ export default function LoginForm() {
           <div className="">
             <button
               type="submit"
-              className="bg-[#67AEEE] px-[16px] py-[6px] rounded-[5px] flex items-center justify-center"
+              className="bg-[#67AEEE] px-[16px] py-[6px] rounded-[5px] flex items-center justify-center hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)]"
             >
               <text className="text-white font-montserrat text-xs font-semibold leading-normal text-[12px] lg:text-[14px]">
                 Log In
