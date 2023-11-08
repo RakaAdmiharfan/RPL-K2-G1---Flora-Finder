@@ -8,4 +8,36 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+  // directUrl = env("DIRECT_URL")
 }
+
+model user {
+  id Int @id
+  username String
+  password String
+  nama String
+  tanggalLahir DateTime
+  alamat String
+  role String
+}
+
+model capacity {
+  staffID Int @id
+  dailyCapacity Int
+}
+
+model packageInfo {
+  packageID Int @id
+  namaPelanggan String
+  alamatPengiriman String
+  noTelp String
+  jenisBunga String
+  catatanPelanggan String
+  tanggalPengiriman DateTime
+  statusPengiriman String
+  hasUpdateStatus Boolean
+  report String
+  proof String
+  staffPengiriman Int
+}
+
