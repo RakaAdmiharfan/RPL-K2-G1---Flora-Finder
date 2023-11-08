@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import EditFormComponent from "./Components/crudForm";
+import EditFormComponent from "./components/crudForm";
 
 import { useRouter } from "next/router";
 import { usePathname, useSearchParams } from "next/navigation";

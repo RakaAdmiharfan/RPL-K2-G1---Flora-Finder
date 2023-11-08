@@ -4,7 +4,7 @@ import { Formik, Form, Field } from "formik";
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { useRouter } from "next/router";
-import users from "../../Components/stafList";
+import users from "../../components/stafList";
 import InputBox from "./inputBox";
 
 const EditFormComponent = () => {

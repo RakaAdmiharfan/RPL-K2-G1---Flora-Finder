@@ -14,7 +14,7 @@ export default function SideNav() {
 
           <ul className="font-medium flex flex-col">
             <li className="flex items-center gap-4 py-4 px-5 rounded-xl hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] mt-[30px]">
-              <Link href="/package-list">
+              <Link href="/packageList-manOps">
                 <p className="flex-1 text-sm whitespace-nowrap">Package List</p>
               </Link>
             </li>
