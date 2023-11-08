@@ -5,9 +5,10 @@ import React, { useState, useEffect } from "react";
 // import Search from "./components/search";
 import Navbar from "../Components/navbar";
 import StafList from "./Components/stafList";
+import SideNav from "../Components/sidenav";
 // import axios from "axios";
 
-export default function PropertyPage() {
+export default function StaffList() {
   const [searchTerm, setSearchTerm] = useState("");
   const [dataProperties, setDataProperties] = useState<any>([]);
 
@@ -48,6 +49,9 @@ export default function PropertyPage() {
     <div className="bg-gradient-to-b from-[#EFF6FD] to-white relative overflow-hidden w-full h-full min-h-[100vh]">
       <nav className="lg:hidden">
         <Navbar />
+      </nav>
+      <nav>
+        <SideNav />
       </nav>
 
       <h2 className="text-[#3D688E] text-center font-montserrat font-semibold text-[24px] mt-[0px] lg:text-[48px] lg:mt-[70px] lg:mb-6">

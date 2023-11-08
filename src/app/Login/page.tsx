@@ -16,12 +16,6 @@ export default function Login() {
 
   return (
     <div className="relative overflow-hidden flex flex-col md:flex-col lg:flex-col bg-white w-full h-full pb-36 lg:pb-72">
-      <nav className="lg:hidden">
-        <Navbar />
-      </nav>
-      {/* <nav className="">
-        <SideNav />
-      </nav> */}
       <h1 className="flex justify-center items-center text-[#3D688E] font-montserrat text-2xl lg:text-[48px] font-bold leading-normal tracking-wide mb-[54px] mt-[108px] lg:mt-[52px]">
         Choose Account Type
       </h1>

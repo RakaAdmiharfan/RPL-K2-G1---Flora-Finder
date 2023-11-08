@@ -1,10 +1,8 @@
 import AcmeLogo from "@/app/ui/acme-logo";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export default function Page() {
-  return (
-    <main className="bg-[#EFF6FD]">
-      <nav></nav>
-    </main>
-  );
+  redirect("/login");
+  return <main className="bg-[#EFF6FD]"></main>;
 }

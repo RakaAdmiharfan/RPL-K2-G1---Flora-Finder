@@ -6,7 +6,13 @@ import EditFormComponent from "./Components/crudForm";
 import { useRouter } from "next/router";
 import { usePathname, useSearchParams } from "next/navigation";
 
-export default function PropertyPage() {
+export default function PropertyPage({
+  params,
+}: {
+  params: {
+    detailStaf: string;
+  };
+}) {
   const [searchTerm, setSearchTerm] = useState("");
   const pathname = usePathname();
   const searchParams = useSearchParams;
@@ -17,13 +23,13 @@ export default function PropertyPage() {
   }, [pathname, searchParams]);
 
   return (
-    <div className="bg-[#EFF2FA] relative overflow-hidden w-full h-content flex-col flex items-center justify-center">
+    <div className="bg-[#EFF6FD] relative overflow-hidden w-full h-content flex-col flex items-center justify-center pb-20">
       <div className="title">
-        <h2 className="text-poppins mb-[24px] lg:mb-[32px] mt-[70px] lg:mt-[140px] text-[28px] lg:text-[60px] text-[#000] text-center">
-          Manage Properties
+        <h2 className="text-[#3D688E] text-[48px] font-bold font-Montserrat text-center mt-[74px]">
+          Delivery Staff Detail
         </h2>
       </div>
-      <div className="Box">
+      <div className="Box mt-[48px]">
         <EditFormComponent />
       </div>
     </div>
