@@ -42,17 +42,14 @@ function NotAssigned({ data, header }: { data: any[]; header: any[] }) {
                 <td className="overflow-hidden w-auto h-auto py-[18.5px] text-[10px] lg:text-[20px] text-center">
                   <div>{packageInfo.alamatPengirim}</div>
                 </td>
-                <td className="overflow-hidden w-auto h-auto py-[18.5px] text-[10px] lg:text-[20px] text-center">
-                  <div>{packageInfo.statusPengiriman}</div>
-                </td>
                 <td className="w-auto h-auto py-[18.5px] align-middle items-end">
                   <Link
                     onClick={() => handleClick(packageInfo)}
                     href={`/package-detail/${packageInfo.packageId}`}
-                    className="hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] flex rounded-[7.145px] w-[12.77vw] px-[14.29px] py-[4.76px] lg:w-[04.94vw] lg:px-[1px] lg:py-[5px] lg:rounded-[10px] justify-center bg-[#BC6161]"
+                    className="hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] flex rounded-[7.145px] w-[12.77vw] px-[14.29px] py-[4.76px] lg:w-[04.94vw] lg:px-[1px] lg:py-[5px] lg:rounded-[10px] justify-center bg-[#67AEEE]"
                   >
                     <h6 className="text-white text-montserrat text-semibold text-[8.574px] lg:text-[18px]">
-                      Check
+                      Assign
                     </h6>
                   </Link>
                 </td>

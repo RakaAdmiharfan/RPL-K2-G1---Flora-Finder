@@ -56,6 +56,8 @@ export default function packageMenu() {
         <SideNav />
       </nav>
 
+      <span></span>
+
       <h2 className="text-[#3D688E] text-center font-montserrat font-bold text-[24px] mt-[0px] lg:text-[48px] lg:mt-[70px] lg:mb-6 justify-center">
         Package List
       </h2>

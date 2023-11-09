@@ -29,7 +29,7 @@ export default function crudPage({
           <img
             src="/arrow-left.svg"
             alt="back"
-            className="ml-[40px] mt-[40px] w-[38px] hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)]"
+            className="ml-[40px] mt-[40px] w-[38px] hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[15px]"
           />
         </Link>
       </div>

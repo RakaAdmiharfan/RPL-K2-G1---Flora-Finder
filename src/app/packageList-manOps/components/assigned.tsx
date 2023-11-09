@@ -55,16 +55,18 @@ function Assigned({ data, header }: { data: any[]; header: any[] }) {
                     </h6>
                   </Link>
                 </td>
-                <td className="flex flex-row justify-center w-auto h-auto py-0">
-                  <Link
-                    onClick={() => handleClick(packageInfo)}
-                    href={`/packageList-manOps/${packageInfo.packageId}`}
-                  >
-                    <img
-                      src="/ArrowSquareOut.svg"
-                      className="w-[20px] lg:w-[40px]"
-                    />
-                  </Link>
+                <td className="w-auto h-auto py-0">
+                  <div className="w-full flex justify-center">
+                    <Link
+                      onClick={() => handleClick(packageInfo)}
+                      href={`/packageList-manOps/${packageInfo.packageId}`}
+                    >
+                      <img
+                        src="/ArrowSquareOut.svg"
+                        className="w-[20px] lg:w-[40px] hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[15px]"
+                      />
+                    </Link>
+                  </div>
                 </td>
               </tr>
             );
