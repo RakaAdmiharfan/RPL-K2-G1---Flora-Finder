@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import Navbar from "../components/navbar";
-import SideNav from "../components/sidenav";
+import Navbar from "../Components/navbar";
+import SideNav from "../Components/sidenav";
 import LoginForm from "@/app/login/components/loginform";
 import UserButton from "./components/userButton";
 import Link from "next/link";

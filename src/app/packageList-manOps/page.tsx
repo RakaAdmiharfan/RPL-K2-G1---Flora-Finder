@@ -3,8 +3,8 @@ import Link from "next/link";
 // Your client-side code here
 import React, { useState, useEffect } from "react";
 // import Search from "./components/search";
-import Navbar from "../components/navbar";
-import SideNav from "../components/sidenav";
+import Navbar from "../Components/navbar";
+import SideNav from "../Components/sidenav";
 import Assigned from "./components/assigned";
 // import axios from "axios";
 
